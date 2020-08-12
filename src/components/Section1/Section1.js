@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionLayout from '../../layouts/section';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -6,6 +6,7 @@ import ReactCompareImage from 'react-compare-image';
 import FirstDog from '../../assets/images/dog1.jpg';
 import SecondDog from '../../assets/images/dog2.jpg';
 import Header from '../Header/Header';
+import { motion } from 'framer-motion';
 
 const StyledParagraph = styled.p`
   margin: 0;
@@ -14,7 +15,7 @@ const StyledParagraph = styled.p`
   color: blue;
 `;
 
-const StyledWrapper = styled.div`
+const StyledWrapper = styled(motion.div)`
   max-width: 375px;
   width: 100%;
 `;
@@ -44,11 +45,19 @@ export const query = graphql`
 const Section1 = () => {
   const data = useStaticQuery(query);
   console.log(data.section1Json);
+  const [shouldShowActions, setShouldShowActions] = useState(false);
 
   return (
     <SectionLayout>
       <Header />
-      <StyledWrapper>
+      <StyledWrapper
+        animate={{
+          opacity: shouldShowActions ? 1 : 0,
+          x: shouldShowActions ? 0 : -500,
+        }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.1 }}
+      >
         <ReactCompareImage
           leftImage={FirstDog}
           leftImageLabel="Gosia"
@@ -56,6 +65,9 @@ const Section1 = () => {
           rightImage={SecondDog}
         />
       </StyledWrapper>
+      <button onClick={() => setShouldShowActions(!shouldShowActions)}>
+        {shouldShowActions ? 'show' : 'hide'}
+      </button>
       <StyledParagraph>{data.section1Json.first_paragraph}</StyledParagraph>
       <StyledParagraph>{data.section1Json.second_paragraph}</StyledParagraph>
       <StyledParagraph>{data.section1Json.third_paragraph}</StyledParagraph>
