@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionLayout from '../../layouts/section';
-import ImageSlider from '../ImageSlider';
+import ImageComparison from '../ImageComparison';
 import styled from 'styled-components';
 import Header from '../Header/Header';
 import Title from '../Title/Title';
@@ -13,7 +13,7 @@ const Section1 = () => {
   return (
     <SectionLayout title="Zamów już dziś">
       <Header />
-      <Title text="Zamów już dzisiaj to cudo" />
+      <Title text="Zamów już dzisiaj to cudo albo i nie" />
       <StyledP>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
         consequatur. Consequuntur non praesentium voluptatibus qui, tenetur
@@ -33,7 +33,26 @@ const Section1 = () => {
         temporibus id blanditiis. Ut repudiandae laudantium quidem consectetur
         illum unde veniam?
       </StyledP>
-      <ImageSlider />
+      <ImageComparison />
+      <StyledP>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+        consequatur. Consequuntur non praesentium voluptatibus qui, tenetur
+        dicta explicabo fuga, quas a, accusamus iste laborum libero labore?
+        Ratione id ipsam repudiandae? Nam illum voluptate suscipit a quibusdam
+        harum sapiente velit consequuntur? Eveniet perferendis iusto nostrum
+        rem! Deserunt quasi a dicta neque quidem odio officia doloribus officiis
+        voluptas praesentium dolore, iste id! Inventore tenetur omnis sunt. Cum
+        excepturi ea rem autem placeat, et reiciendis hic perferendis, voluptas,
+        quidem nam blanditiis iure. Cum aliquid laboriosam placeat debitis odit
+        tempore a nulla. Ipsum, exercitationem. Sit vitae porro corrupti rerum
+        vel perferendis aliquam. Fugiat, vero, voluptatum suscipit consequatur
+        sapiente officia natus expedita ea dignissimos odio mollitia officiis
+        temporibus reprehenderit rerum quas alias ipsum commodi. Corporis.
+        Voluptatibus, rerum consectetur optio a veniam iste earum dolorem
+        laboriosam officia? Ex in alias voluptatum beatae delectus sequi aperiam
+        temporibus id blanditiis. Ut repudiandae laudantium quidem consectetur
+        illum unde veniam?
+      </StyledP>
     </SectionLayout>
   );
 };

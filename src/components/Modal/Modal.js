@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styled from 'styled-components';
-import ImageSlider from '../ImageSlider';
+import ImageComparison from '../ImageComparison';
 
 const backdrop = {
   visible: { opacity: 1 },
@@ -59,7 +59,21 @@ const Modal = ({ showModal, setShowModal }) => {
         >
           <StyledOverlay onClick={() => setShowModal(!showModal)} />
           <StyledModal variants={modal}>
-            <ImageSlider />
+            <div className="">
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium ad, cum dignissimos enim ex exercitationem fugiat
+                molestiae nam nostrum numquam obcaecati quae quaerat quam
+                quibusdam, ratione rerum saepe vel veritatis?
+              </div>
+              <div>
+                Adipisci assumenda cupiditate debitis dolor dolorem, expedita
+                libero molestiae necessitatibus nesciunt nostrum, obcaecati
+                porro quam quidem ratione ullam. Culpa eligendi exercitationem
+                numquam omnis quisquam reprehenderit, temporibus? Assumenda
+                excepturi nemo reiciendis.
+              </div>
+            </div>
           </StyledModal>
         </StyledBackdrop>
       )}
