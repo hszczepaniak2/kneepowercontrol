@@ -1,0 +1,16 @@
+{
+  "label": "section1",
+  "title": "Hubert to jest jednak gość",
+  "images": [
+    {
+      "image-1": "../../assets/images/avatar.png"
+    }
+  ],
+  "paragraphs": [
+    {
+      "first_paragraph": "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+      "second_paragraph": "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem",
+      "third_paragraph": "LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem"
+    }
+  ]
+}

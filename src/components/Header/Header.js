@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledLogo>Knee Power Control</StyledLogo>
-      <StyledLink whileHover={{ scale: 1.05 }} href="">
+      <StyledLink whileHover={{ y: -2 }} href="">
         Opinie klientów
       </StyledLink>
       <StyledLink href="">Ocena doktora</StyledLink>

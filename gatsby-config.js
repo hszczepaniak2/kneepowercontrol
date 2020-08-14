@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Knee Power Control`,
     description: `Wyeliminuj ból i odzyskaj 100% sprawność stawów w zaledwie 4 tygodnie z Knee Power Control`,
+    siteUrl: 'https://kneepower-control.web.app/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,5 +33,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-robots-txt`,
   ],
 };

@@ -16,7 +16,14 @@ export const StyledHeader = styled.header`
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
-  z-index: 1;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 16px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 16px -5px rgba(0, 0, 0, 0.75);
+
+  @media (max-width: 400px) {
+    display: none;
+  }
 `;
 
 export const StyledLink = styled(motion.a)`

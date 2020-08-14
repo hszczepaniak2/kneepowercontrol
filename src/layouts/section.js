@@ -6,17 +6,11 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f2f2f2;
   color: ${props => (props.color ? props.color : '#000')};
 `;
 
-const SectionLayout = ({ children, title, ...props }) => {
-  return (
-    <StyledSection {...props}>
-      <h1>{title}</h1>
-      {children}
-    </StyledSection>
-  );
+const SectionLayout = ({ children, ...props }) => {
+  return <StyledSection {...props}>{children}</StyledSection>;
 };
 
 export default SectionLayout;
